@@ -5,22 +5,27 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:padding="10dp"
     tools:context=".MainActivity">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center"
+        android:layout_marginBottom="10dp"
         >
         <Button
+            android:id="@+id/btn_park"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="박서준"/>
         <Button
+            android:id="@+id/btn_exo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="엑소"/>
         <Button
+            android:id="@+id/btn_hama"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="우주하마"/>
@@ -29,6 +34,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <LinearLayout
+            android:id="@+id/linear_park"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="#9EDF52"
@@ -41,9 +47,11 @@
                 />
         </LinearLayout>
         <LinearLayout
+            android:id="@+id/linear_exo"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="#5DA2D8"
+            android:visibility="invisible"
             >
             <ImageView
                 android:layout_width="match_parent"
@@ -53,9 +61,11 @@
                 />
         </LinearLayout>
         <LinearLayout
+            android:id="@+id/linear_hama"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="#C979D6"
+            android:visibility="invisible"
             >
             <ImageView
                 android:layout_width="match_parent"
